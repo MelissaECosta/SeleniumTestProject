@@ -15,4 +15,13 @@ public class SeleniumTests
         Assert.That(driver.Title, Is.EqualTo("Selenium"));
         driver.Quit();
     }
+
+    [Test]
+    public void SecondTest()
+    {
+        IWebDriver driver = new OpenQA.Selenium.Firefox.FirefoxDriver();
+        driver.Navigate().GoToUrl("https://www.selenium.dev/");
+        Assert.That(driver.Title, Is.EqualTo("Selenium"));
+        driver.Quit();
+    }
 }
